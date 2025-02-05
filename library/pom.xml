@@ -50,8 +50,12 @@
     <repository>
       <id>github</id>
       <name>GitHub Packages</name>
-      <url>https://maven.pkg.github.com/${github.repository}</url>
+      <url>https://maven.pkg.github.com/caimito/feature-toggles</url>
     </repository>
+    <site>
+      <id>github</id>
+      <url>scm:git:git@github.com:Caimito/feature-toggles.git</url>
+    </site>
   </distributionManagement>
 
   <build>
