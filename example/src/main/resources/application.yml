@@ -2,6 +2,9 @@ feature-toggles:
   toggles:
     foo:
       enabled: true
+    secret-foo:
+      enabled: true
+      roles: ["ROLE_USER"]
     new-dashboard:
       enabled: true
       roles: ["ADMIN", "USER"]
