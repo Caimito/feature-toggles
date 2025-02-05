@@ -1,0 +1,11 @@
+feature-toggles:
+  toggles:
+    new-dashboard:
+      enabled: true
+      roles: ["ADMIN", "USER"]
+      experimentPercentage: 50
+
+logging:
+  level:
+    # org.springframework: DEBUG
+    net.caimito.features: DEBUG
