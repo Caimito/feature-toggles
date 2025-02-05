@@ -13,6 +13,10 @@ public class FeatureToggleService {
     this.featureToggleConfig = featureToggleConfig;
   }
 
+  public boolean isFeatureEnabled(String feature) {
+    return isFeatureEnabled(feature, null);
+  }
+
   public boolean isFeatureEnabled(String feature, Authentication auth) {
     FeatureToggleConfig.FeatureToggle toggle = featureToggleConfig.getFeatureToggle(feature);
     if (!toggle.isEnabled()) {
